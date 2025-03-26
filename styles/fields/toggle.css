@@ -1,0 +1,92 @@
+.toggle-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-label{
+    margin-bottom: .75rem;
+}
+
+.toggle-switch{
+    position: relative;
+    width: 100%;
+    
+
+    & input{
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        z-index: 1; /* mantém o input acima dos outros elementos*/
+    }
+}
+
+.switcher {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     height: 2.5rem;
+     
+     color: var(--input-placeholder);
+     background-color: var(--shape-body);
+     border: 1px solid var(--input-stroke);
+     border-radius: .5rem;
+     padding: .25rem;
+     
+
+     position: relative;
+     
+}
+
+.switcher::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    margin-left: .25rem;
+    
+
+    left: 0;
+    right: 50%;
+    background-color: var(--shape-hover);
+    opacity: 70%;
+    border-radius: .25rem;
+    transition:  transform .3s ease-in-out;
+
+    
+}
+
+.toggle-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    z-index: 1;
+
+    /* Resetar cor inicial dos ícones */
+    & img {
+        width: 1rem;
+    }
+}
+/* Estado ativo do input (quando o toggle está "checado") */
+.toggle-switch input:checked + .switcher::before{
+    transform: translate(95%);
+}
+
+.toggle-switch input:checked + .switcher .online{
+    color: var(--text-body);
+    &:has(:checked), & img{
+        content: url(../../assets/icons/video-toggle.svg);
+    }
+
+}
+
+.toggle-switch input:not(:checked) + .switcher .presencial {
+    color: var(--text-body);
+    &:has(:checked), & img{
+        content: url(../../assets/icons/building-toggle.svg);
+    }
+}

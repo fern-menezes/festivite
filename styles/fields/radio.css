@@ -1,0 +1,80 @@
+.event-color{
+    display: flex;
+    gap: 3rem;
+}
+.radio-inner {
+    position: relative;
+    width: 100%;
+
+    input {
+        opacity: 0;
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .radio-color {
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        border-radius: 50%;
+       
+        
+    }
+
+    input#light-blue + .radio-color {
+        background-image: url(../../assets/radios/light-blue.svg);
+    }
+
+    input#blue + .radio-color {
+        background-image: url(../../assets/radios/purple.svg);
+    }
+
+    input#purple + .radio-color {
+        background-image: url(../../assets/radios/lavander.svg);
+    }
+
+    input#fucsia + .radio-color {
+        background-image: url(../../assets/radios/fucsia.svg);
+    }
+
+    input#pink + .radio-color {
+        background-image: url(../../assets/radios/pink.svg);
+    }
+
+    input#red + .radio-color {
+        background-image: url(../../assets/radios/red.svg);
+    }
+
+    input#orange + .radio-color {
+        background-image: url(../../assets/radios/orange.svg);
+    }
+
+    input#yellow + .radio-color {
+        background-image: url(../../assets/radios/yellow.svg);
+    }
+
+    input#lime + .radio-color {
+        background-image: url(../../assets/radios/lime.svg);
+    }
+
+    input#green + .radio-color {
+        background-image: url(../../assets/radios/green.svg);
+    }
+
+    input#cyan + .radio-color {
+        background-image: url(../../assets/radios/cyan.svg);
+
+    }
+}
+
+input:checked + .radio-color {
+    border: 3px solid var(--brand-light);   
+}
+
+

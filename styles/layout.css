@@ -1,0 +1,39 @@
+@import url(./fields/input.css);
+@import url(./fields/toggle.css);
+@import url(./fields/radio.css);
+
+#app{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    height: 100vh;
+}
+
+aside{
+    background-image: url(/assets/illustrations/Background.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: contain;
+    
+    & .aside-container{
+        font: var(--text-md);
+        color: var(--text-heading);
+        padding: 2rem;
+        
+
+        & h1{
+            font: var(--text-logo);
+            color: #FF598B;
+        }
+        & img{
+            width: 3rem;
+        }
+        
+    }
+}
+
+.main-container{
+    padding: 5rem 14rem;
+    overflow: auto;
+    
+}

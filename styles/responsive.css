@@ -1,0 +1,21 @@
+@media (min-width: 280px) and (max-width: 800px) {
+    
+    #app{
+        display: flex;
+        flex-direction: column;
+    
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    
+    #app{
+        display:grid;
+        grid-template-columns: 40% 60%;
+    
+        width: 100vw;
+        height: 100vh;
+    }
+}

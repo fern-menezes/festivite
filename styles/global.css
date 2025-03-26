@@ -36,3 +36,31 @@
     --shape-button: #2D3136;
     --shape-hover: #383D42;
 }
+
+body{
+    background-color: var(--shape-body);
+    color: var(--text-body);
+    font: var(--text-md);
+}
+fieldset{
+    all: unset;
+}
+
+h2{
+    font: var(--text-hmd);
+    margin-bottom: 2.5rem;
+}
+.form-legends{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    & img{
+        width: 1.2rem;
+        color: var(--input-placeholder);
+        margin-right: .75rem;
+    }
+}
+.event-details{
+    margin-top: 3rem;
+}
