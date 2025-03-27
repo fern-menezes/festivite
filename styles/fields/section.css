@@ -1,0 +1,7 @@
+.style-photo{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    margin-top: 1.75rem;
+
+}

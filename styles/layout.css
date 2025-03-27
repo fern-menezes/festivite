@@ -1,6 +1,8 @@
 @import url(./fields/input.css);
 @import url(./fields/toggle.css);
 @import url(./fields/radio.css);
+@import url(./fields/section.css);
+@import url(./cards.css);
 
 #app{
     display: grid;
@@ -33,7 +35,12 @@ aside{
 }
 
 .main-container{
-    padding: 5rem 14rem;
-    overflow: auto;
-    
+    width: 100%;
+    overflow: auto;    
+}
+
+.form-event{
+    width: 50%;
+    margin: 5rem auto;
+
 }
