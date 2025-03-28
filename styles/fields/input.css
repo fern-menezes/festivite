@@ -30,6 +30,7 @@ textarea{
     border: 1px solid var(--input-stroke);
     border-radius: .5rem;
     padding: 0.5rem 0.8rem;
+    color: var(--text-body);
 }
 
 .photo{
