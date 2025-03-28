@@ -1,0 +1,30 @@
+.input-terms{
+    display: flex;
+    gap: .5rem;
+    position: relative;
+    font: var(--text-sm);
+
+    & span{
+        font-weight: 600;
+        color: var(--brand-light);
+        
+    }
+    & input {
+        position: absolute;
+        opacity: 0;
+    }
+
+    & .cb-image{
+        flex: 0 0 1.5rem;
+        height: 1.5rem;
+        background-image: url(../../assets/icons/checkbox-default.svg);
+        background-repeat: no-repeat;
+    }
+
+    
+    &:has(:checked) .cb-image{
+        background-image: url(../../assets/icons/checkbox-selected.svg);
+    }
+}
+
+

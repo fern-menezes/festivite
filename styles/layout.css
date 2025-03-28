@@ -3,6 +3,7 @@
 @import url(./fields/radio.css);
 @import url(./fields/section.css);
 @import url(./cards.css);
+@import url(./fields/checkbox.css);
 
 #app{
     display: grid;
@@ -36,7 +37,8 @@ aside{
 
 .main-container{
     width: 100%;
-    overflow: auto;    
+    overflow: auto;
+    padding-bottom: 3rem; 
 }
 
 .form-event{

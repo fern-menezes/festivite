@@ -41,6 +41,7 @@ body{
     background-color: var(--shape-body);
     color: var(--text-body);
     font: var(--text-md);
+    
 }
 fieldset{
     all: unset;
@@ -63,4 +64,33 @@ h2{
 }
 .event-details{
     margin-top: 3rem;
+}
+.contact-info{
+    margin-top: 3rem;
+}
+.separador{
+    margin-top: 2.5rem;
+    border-bottom: 1px solid var(--shape-hover);
+    margin-bottom: 1.5rem;
+}
+
+.invite{
+    background-color: var(--brand-light);
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-top: 3rem;
+    
+    cursor: pointer;
+    
+    
+    gap: .5rem;
+    font: var(--text-body);
+    color: var(--text-heading);
+}
+.invite:hover{
+    background-color: var(--brand-dark);
 }

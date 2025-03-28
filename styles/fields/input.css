@@ -1,4 +1,4 @@
-.event-info{
+.event-info, .contact-info{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -8,15 +8,12 @@
         background-color: var(--shape-body);
         border: 1px solid var(--input-stroke);
         border-radius: .5rem;
-        padding: 0.5rem 0.8rem;
-    
-        
+        padding: 0.5rem 0.8rem;    
     }
     
     & .input-wrapper{
         display: flex;
         flex-direction: column;
-    
         gap: .75rem;
     }
 
@@ -48,6 +45,7 @@ textarea{
         position: absolute;
         width: 100%;
         height: 100%;
+        cursor: pointer;
 
     }
     .upload-button{
@@ -57,6 +55,7 @@ textarea{
         width: 8rem;
         padding: .75rem;
         color: var(--text-body);
+        
 
         display: flex;
         align-items: center;
@@ -66,7 +65,16 @@ textarea{
         & img{
             width: 1rem;
         }
+        
     }
+
+    &:hover input + .upload-button {
+        background-color: var(--shape-hover);
+        transition: background-color 0.2s ease;
+        color: var(--text-heading);
+    }
+    
+    
     .file-input{
         display: flex;
         gap: .75rem;
@@ -76,3 +84,5 @@ textarea{
         margin-top: 0.5rem;
     }
 }
+
+
