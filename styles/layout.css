@@ -13,7 +13,7 @@
 }
 
 aside{
-    background-image: url(/assets/illustrations/Background.png);
+    background-image: url(../assets/illustrations/Background.png);
     background-repeat: no-repeat;
     min-height: 100vh;
     background-size: contain;
